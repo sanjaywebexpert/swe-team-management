@@ -1,0 +1,288 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.swe_team_carousel_layout {
+    padding-top: 30px;
+    padding-bottom: 30px;
+} 
+ .menu-icon-sweteammngent {
+    background: #dc7f10;
+}
+li#wp-admin-bar-swe-teams a {
+    background: #dc7f10;
+}
+.swe-repeater-wrap-label {
+    vertical-align: middle;
+    text-align: left;
+    padding: 20px 10px 20px 0;
+    width: 20%;
+    color: #000;
+    font-weight: bold;
+	float:left
+}
+.swe-repeater-item-wraper{
+    width: 75%;
+    float: left;
+}
+.swe_team_social_repeater_field {
+    display: inline-block;
+    padding: 5px;
+}
+.swe-repeater-item {
+    display: inline-block;
+    padding: 5px;
+    margin: 3px 0px;
+    border: 1px solid #ccc;
+    background: #ececec;
+}
+.swe_repeater_helper span {
+    padding: 0px 5px;
+}
+.swe_repeater_helper {
+    display: inline-block;
+    margin-left: 26px;
+    padding: 5px;
+}
+a.swe-repeater-add {
+    margin-left: 20px !important;
+    margin-top: 10px !important;
+}
+.swe-repeater-add span.dashicons.dashicons-plus-alt {
+    line-height: 1.5;
+}
+.swe_remove_social {
+    cursor: pointer;
+    color: #999;
+}
+.swe_remove_social:hover {
+    cursor: pointer;
+    color: #000;
+}
+.swe_team_social_repeater_field select {
+    width: 110px;
+}
+span.dashicons.dashicons-move.swe_rearange_social {
+    font-size: 17px;
+    color: #999;
+    cursor: pointer;
+}
+span.dashicons.dashicons-move.swe_rearange_social:hover {
+    color: #000;
+    cursor: pointer;
+}
+span.dashicons.dashicons-no-alt.disable {
+    cursor: no-drop;
+}
+.widget-placeholder{
+	background:#ffe66d;
+}
+img.swe-team-thumb-listing {
+    width: auto;
+    height: 60px;
+}
+.swe_team_setting_head{
+	padding: 5px 15px;
+    border-radius: 4px;
+    margin: 20px 0 21px !important;
+    background: #e07e0b;
+    color: #fff;
+    text-align: center
+}
+.swe_team_heading_tab {
+    color: #fff;
+    font-size: 27px;
+    line-height: 1;
+    margin: 15px;
+}
+.swe_layout_heading{
+	text-align: center;
+    border: 1px solid;
+    padding: 10px;
+    background: #ececec;
+}
+.swe_team_tabs {
+    display: flex;
+	position:relative !important;
+    margin-top: -1px;
+    border: 1px solid #dcdcdc !important;
+	padding:0px !important;
+}
+.team_layouts_ul{
+	padding:0px !important;
+	margin:0px !important;
+}
+.swe_tab_links_sidebar .team_layouts_ul li{
+	width: 100%;
+    border-radius: 0px;
+    padding: 0px 0px !important;
+    background: transparent;
+    margin: 0px !important;
+    border: 0px;
+    border-bottom: 1px solid #ccc !important;
+	border-left: 3px solid transparent;
+}
+.swe_tab_links_sidebar .team_layouts_ul li.ui-tabs-active{
+	border:0px;
+	margin:0px;
+    border-left: 3px solid #fb8800;
+	background: #fff;
+}
+.swe_tab_links_sidebar .team_layouts_ul li a{
+	display: block;
+	float:none !important;
+	padding: 13px 12px !important;
+}
+.swe_tab_links_sidebar .team_layouts_ul li a:focus{
+	outline:0px;
+	box-shadow:none;
+}
+.swe_tab_links_sidebar .team_layouts_ul li.ui-tabs-active a {
+    color: #fb8800;
+	font-weight: 600;
+}
+.swe_tab_links_sidebar {
+    display: block;
+    position: relative;
+    z-index: 10;
+    float: left;
+    width: 225px;
+	border-right: 1px solid #cecece;
+}
+.swe_tab_content_wrap {
+    width: 100%;
+    margin: 0;
+	position: relative;
+    background-color: #fff;
+    -moz-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+}
+
+/* Switch Radio Style*/
+.switch-field {
+	display: flex;
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+.switch-field label {
+	background-color: #e4e4e4;
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	padding: 5px 13px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	transition: all 0.1s ease-in-out;
+}
+.switch-field label:hover {
+	cursor: pointer;
+}
+.switch-field input:checked + label {
+	background-color: #e07e0b;
+    box-shadow: none;
+    color: #fff;
+}
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
+
+.swe_tab_content_wrap .form-table th{
+	padding: 10px 10px 10px 0;
+}
+.swe_tab_content_wrap .form-table td {
+    margin-bottom: 9px;
+    padding: 7px 10px;
+}
+.swe_tab_content_wrap .form-table td th {
+	font-weight:400;
+}
+span.shortcode_name {
+    font-size: 19px;
+    padding-right: 14px;
+    color: #fb8800;
+}
+span.shortcode_info {
+    padding-left: 8px;
+    font-style: italic;
+	font-size: 12px;
+}
+
+/* Preview style */
+.preview_layout_1 {
+    max-width: 860px;
+    border: 1px solid #555;
+    box-shadow: 1px 1px 15px #ccc;
+    padding: 10px;
+    background: #e2e1e1;
+    border-radius: 10px;
+	margin: 20px;
+}
+.text-shortcode-wrap {
+    margin: 10px 0px 18px;
+}
+.carousel-layout {
+    padding-top: 15px;
+}
+#swe_faq_page_accordion .ui-accordion-icons:focus {
+	outline:none;
+}
+#swe_faq_page_accordion .ui-accordion-icons:before {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f105";
+}
+#swe_faq_page_accordion .ui-accordion-icons.ui-accordion-header-active:before {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f107";
+}
+#swe_faq_page_accordion .ui-accordion-icons.ui-accordion-header-active {
+    background: #fb8800;
+    border-color: #fb8800;
+}
+#swe_faq_page_accordion .ui-accordion-icons {
+    padding: 12px;
+    font-size: 18px;
+}
+#swe_faq_page_accordion .ui-accordion .ui-accordion-content{
+	background: #fff;
+}
+p.use_steps {
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+	 font-size: 15px;
+}
+p.swe_contact a {
+    color: #fb8800;
+    text-decoration: none;
+}
+p.swe_contact {
+    line-height: 1.5;
+    font-size: 15px;
+}
+.swe_team_carousel_layout a {
+    text-decoration: none;
+}
+.team_grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+}
+.team_grid .thumbnail-image, .team_grid .team-image-box img, .team_grid .img-box img {
+    width: 100%;
+}
+

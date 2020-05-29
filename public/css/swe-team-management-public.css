@@ -1,0 +1,38 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ 
+.team_grid {
+    display: grid;
+    grid-gap: 1rem;
+}
+.swe-team-layout-10.team_grid  .single-team3 .image .inner-image img{
+	width: 200px;
+	height: 200px;
+}
+.swe-team-layout-4.team_grid .single-team-member .thumbnail-image{
+	width: 195px;
+    height: 195px;
+}
+@media screen and (min-width: 1200px) {
+	.team_grid {
+		grid-template-columns: repeat(4,1fr);
+	}
+}
+@media screen and (max-width: 1199px) {
+	.team_grid {
+		grid-template-columns: repeat(3,1fr);
+	}
+}
+@media screen and (max-width: 768px) {
+	.team_grid {
+		grid-template-columns: repeat(2,1fr);
+	}
+
+}
+@media screen and (max-width: 600px) {
+	.team_grid {
+		grid-template-columns: repeat(1,1fr);
+	}
+}
