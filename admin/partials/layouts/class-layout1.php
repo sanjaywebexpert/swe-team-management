@@ -549,7 +549,7 @@ class layout1{
 	public function team_name_font_weight_19_callback() {
 		$team_layout_options = get_option( 'team_layout_option_name' ); 
 		printf(
-			'<input class="medium-text" type="number" name="team_layout_option_name[team_name_font_weight_19]" id="team_name_font_weight_19" value="%s" placeholder="600"><span><em>px</em></span>',
+			'<input class="medium-text" type="number" name="team_layout_option_name[team_name_font_weight_19]" id="team_name_font_weight_19" value="%s" placeholder="600">',
 			isset( $team_layout_options['team_name_font_weight_19'] ) ? esc_attr( $team_layout_options['team_name_font_weight_19']) : ''
 		);
 	}

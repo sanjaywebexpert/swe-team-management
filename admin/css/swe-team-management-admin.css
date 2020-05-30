@@ -285,4 +285,7 @@ p.swe_contact {
 .team_grid .thumbnail-image, .team_grid .team-image-box img, .team_grid .img-box img {
     width: 100%;
 }
-
+a#swe_team_reset_setting{
+    float: right;
+    margin-top: -45px;
+}

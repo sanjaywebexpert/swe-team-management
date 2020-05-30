@@ -115,16 +115,9 @@ class Swe_Team_Management_Admin {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-		 
-		 /* Ajax Decleration */
-		/* wp_localize_script( 'swe-admin-ajax', 'load_team_layout_ajax',
-			array( 
-				'ajaxurl' => admin_url( 'admin-ajax.php' ),
-				'author_name' => 'sanjay 1',
-			)
-		); */
 		
 		wp_enqueue_script('jquery');
+		
 		wp_enqueue_script('jquery-ui-tabs');
 		wp_enqueue_script( 'wp-color-picker' );
 		wp_enqueue_script( 'jquery-ui-sortable' );
@@ -136,8 +129,16 @@ class Swe_Team_Management_Admin {
 		
 		
 		
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/swe-team-management-admin.js', array( 'jquery' ), $this->version, true );
+		wp_enqueue_script( 'swe-team-admin-script', plugin_dir_url( __FILE__ ) . 'js/swe-team-management-admin.js', array( 'jquery' ), $this->version, true );
 		
+		/* Ajax Decleration */
+		wp_localize_script( 'swe-team-admin-script', 'sweteamAjax',
+			array( 
+				'ajaxurl' => admin_url( 'admin-ajax.php' ),
+				'author_name' => 'sanjay 1',
+			)
+		);
+		wp_enqueue_script('swe-team-admin-js');
 	}
 	
 	/* Register Post Type */
@@ -239,12 +240,34 @@ class Swe_Team_Management_Admin {
 	function team_preview_load_action(){
 		$layout_id = $_POST['layout_id'];
 		ob_start();
-	include_once(SWE_TEAM_MANAGEMENT_PLUGIN_DIR.'/admin/partials/layouts/preview/preview_'.$layout_id.'.php');
-	$content = ob_get_contents();
-	ob_end_clean();
-	echo $content;
-		wp_die();
+		include_once(SWE_TEAM_MANAGEMENT_PLUGIN_DIR.'/admin/partials/layouts/preview/preview_'.$layout_id.'.php');
+		$content = ob_get_contents();
+		ob_end_clean();
+		echo $content;
+			wp_die();
 	}
-
+	
+	/**
+	 * Ajax func to reset Team Setting listing 
+	 *
+	 **/
+	public function swe_team_reset_setting_func(){
+		$team_layout_options = array(
+			'carousel_loop_0' => '0',
+			'pagination_1' => '0',
+			'autoplay_4' =>'0',
+			'autoplay_pause_on_hover_6' =>'0',
+			'autoplay_timeout_7' =>'0',
+			'show_team_name_12' =>'0',
+			'show_team_designation_13' =>'0',
+			'team_short_description_limit_14' =>'0',
+			'show_hide_social_connection_15' =>'0',
+			'social_link_target_16' =>'0',
+		);
+		
+		update_option('team_layout_option_name', $team_layout_options);
+		echo "Setting Reset successful";
+		die();
+	}
 
 }

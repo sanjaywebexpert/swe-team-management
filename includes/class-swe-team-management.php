@@ -172,8 +172,8 @@ class Swe_Team_Management {
 		/*  manage Column in Team listing */
 		$this->loader->add_action( 'manage_sweteammngent_posts_custom_column', $plugin_admin, 'swe_team_mng_all_colmns' );
 		
-		$this->loader->add_action('wp_ajax_team_preview_load_action', $plugin_admin, 'team_preview_load_action');
-		$this->loader->add_action('wp_ajax_nopriv_team_preview_load_action', $plugin_admin, 'team_preview_load_action');
+		$this->loader->add_action('wp_ajax_swe_team_reset_action', $plugin_admin, 'swe_team_reset_setting_func');
+		$this->loader->add_action('wp_ajax_nopriv_swe_team_reset_action', $plugin_admin, 'swe_team_reset_setting_func');
 		
 	}
 

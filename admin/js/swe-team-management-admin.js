@@ -111,3 +111,20 @@
       })
 	};
 	
+	jQuery("#swe_team_reset_setting").click(function(){
+		jQuery.ajax({
+			type : "post",
+			url : sweteamAjax.ajaxurl,
+			data : {action: "swe_team_reset_action"},
+			beforeSend: function(){
+				jQuery("#show_loader").show();
+			},
+			success: function(response) {
+				jQuery("#show_loader").hide();
+				location.reload();
+			},
+			error: function(){
+			    jQuery("#show_loader").html("<p>Something went rong to load preview</p>");
+			}
+		})
+	});

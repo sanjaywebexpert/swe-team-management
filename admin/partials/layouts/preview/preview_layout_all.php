@@ -17,36 +17,28 @@
  $team_short_description_limit_14 = $team_layout_options['team_short_description_limit_14']; // Team Short Description Limit
  $show_hide_social_connection_15 = $team_layout_options['show_hide_social_connection_15']; // Show / Hide Social Connection
  $social_link_target_16 = $team_layout_options['social_link_target_16']; // Social Link Target
- $team_name_font_size_17 = $team_layout_options['team_name_font_size_17']; // Team Name Font Size
- $team_name_font_weight_19 = $team_layout_options['team_name_font_weight_19']; // Team Name Font Weight
+ $team_name_font_size_17 = $team_layout_options['team_name_font_size_17']; // Team Name Font Size  $team_name_font_weight_19 = $team_layout_options['team_name_font_weight_19']; // Team Name Font Weight
  $hover_overlay_color_20 = $team_layout_options['hover_overlay_color_20']; // Hover Overlay color
  $theme_color_21 = $team_layout_options['theme_color_21']; // Theme Color
- 
-
-/* slider js  */
-$carousel_loop_0 = isset($carousel_loop_0) ? $carousel_loop_0 : 'true';
-$pagination_1 = isset($pagination_1) ? $pagination_1 : 'true';
-$navigation_2 = isset($navigation_2) ? $navigation_2 : 'true';
-$autoplay_4 = isset($autoplay_4) ? $autoplay_4 : 'true';
-$autoplay_pause_on_hover_6 = isset($autoplay_pause_on_hover_6) ? $autoplay_pause_on_hover_6 : 'true';
-$autoplay_timeout_7 = $autoplay_timeout_7!="" ? $autoplay_timeout_7 : '5000';
-$margin_8 = $margin_8!="" ? $margin_8 : '15';
-$columns_in_desktop_9 = isset($columns_in_desktop_9) ? $columns_in_desktop_9 : '4';
-$columns_in_table_10 = isset($columns_in_table_10) ? $columns_in_table_10 : '2';
-$columns_in_mobile_11 = isset($columns_in_mobile_11) ? $columns_in_mobile_11 : '1';
+/* slider js  */
+$carousel_loop_0 = isset($carousel_loop_0) ? $carousel_loop_0 : 'true';
+$pagination_1 = isset($pagination_1) ? $pagination_1 : 'true';
+$navigation_2 = isset($navigation_2) ? $navigation_2 : 'true';
+$autoplay_4 = isset($autoplay_4) ? $autoplay_4 : 'true';
+$autoplay_pause_on_hover_6 = isset($autoplay_pause_on_hover_6) ? $autoplay_pause_on_hover_6 : 'true';
+$autoplay_timeout_7 = $autoplay_timeout_7!="" ? $autoplay_timeout_7 : '5000';
+$margin_8 = $margin_8!="" ? $margin_8 : '15';
+$columns_in_desktop_9 = isset($columns_in_desktop_9) ? $columns_in_desktop_9 : '4';
+$columns_in_table_10 = isset($columns_in_table_10) ? $columns_in_table_10 : '2';
+$columns_in_mobile_11 = isset($columns_in_mobile_11) ? $columns_in_mobile_11 : '1';
 $navigation_position_3 = isset($navigation_position_3) ? $navigation_position_3 : 'Bottom Right';
-
-
-/* layout elements */
-$show_hide_social_connection_15 = isset($show_hide_social_connection_15) ? $show_hide_social_connection_15 : 'true';
-$show_team_name_12 = isset($show_team_name_12) ? $show_team_name_12 : 'true';
+/* layout elements */
+$show_hide_social_connection_15 = isset($show_hide_social_connection_15) ? $show_hide_social_connection_15 : 'true';
+$show_team_name_12 = isset($show_team_name_12) ? $show_team_name_12 : 'true';
 $show_team_designation_13 = isset($show_team_designation_13) ? $show_team_designation_13 : 'true';
-
-
-$team_name_font_size_17 = isset($team_name_font_size_17) ? $team_name_font_size_17 : '20';
-$hovercolor = isset($hover_overlay_color_20) ? $hover_overlay_color_20 : 'rgba(0,0,0,0.75)';
+$team_name_font_size_17 = isset($team_name_font_size_17) ? $team_name_font_size_17 : '20';
+$hovercolor = isset($hover_overlay_color_20) ? $hover_overlay_color_20 : 'rgba(0,0,0,0.75)';
 $theme_color = isset($theme_color_21) ? $theme_color_21 : '#fb8800';
-
 $nav_pos = '';
 if($navigation_position_3=="Top Right"){
 	$nav_pos.='
@@ -100,12 +92,11 @@ elseif($navigation_position_3=="Bottom Left"){
 		right: 0;
 		bottom: -45px;
 	';
-}
-
+}
 ?>
 
-<style>
-	/* TEAM LAYOUT 1  */
+<style>
+	/*** TEAM LAYOUT 1  ***/
 	.swe-team-layout-1 .profile h1{
 		   font-size: <?=$team_name_font_size_17?>px;
 		   color: <?=$theme_color?>;
@@ -157,12 +148,12 @@ elseif($navigation_position_3=="Bottom Left"){
 	
 	/* TEAM LAYOUT 4  */
 	.swe-team-layout-4 .single-team-member:hover {
-		background: <?=$theme_color?>;;
+		background: <?=$theme_color?>;
 	}
 	.swe-team-layout-4 .single-team-member .thumbnail-image {
 		border: 2px solid <?=$theme_color?>;
 	}
-	
+
 	/* TEAM LAYOUT 5  */
 	.swe-team-layout-5 .team_item:hover .hover_content .icon a:hover {
 		color: <?=$theme_color?>;
@@ -506,7 +497,6 @@ elseif($navigation_position_3=="Bottom Left"){
 				<li><a href="#" ><i class="fa fa-twitter"></i></a></li>
 				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-				<a href="https://google.com"><li><i class="fa fa-google-plus"></i></li></a>
 				</ul>
 			<?php } ?>
 			</div>
